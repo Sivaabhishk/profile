@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bubble App</title>
+	<link rel="stylesheet" type="text/css" href="cssbasics/bubblestyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<section>
+		<div class="box">
+			<div class ="circle">
+			<button class="circle1" >
+				<div class="icons" onmouseenter="ResetId() ">
+			<i class="fa-solid fa-arrow-left-long"></i>
+		</div>
+
+			</button><br>
+			<button class="circle2" >
+				<div class="icons1"onmouseenter="ChangeId()">
+			<i class="fa-solid fa-arrow-left-long"></i>
+		</div>
+			</button><br>
+			<button class="circle3">
+				<div class="icons2"onmouseenter="MoveId()">
+			<i class="fa-solid fa-arrow-left-long"></i>
+		</div>
+			</button><br>
+			<button class="circle4">
+				<div class="icons3"onmouseenter="MoveId1()">
+			<i class="fa-solid fa-arrow-left-long"></i>
+		</div>
+			</button><br>
+			<button class="circle5">
+				<div class="icons4"onmouseenter="MoveId2()">
+			<i class="fa-solid fa-arrow-left-long"></i>
+		</div>
+			</button><br>
+
+			</div>
+		</div>
+
+		
+			</section>
+			<!--<button class="ResetId"onmouseleave="ChangeId()">RESET</button>-->
+			<button class="ResetId" onclick="myButton() ">Reset</button>
+	<script >
+	function ResetId() {
+			document.querySelector(".icons").style.marginLeft="100px"
+
+		}
+		function ChangeId(){
+			document.querySelector(".icons1").style.marginLeft="100px"
+		}
+		function MoveId() {
+			document.querySelector(".icons2").style.marginLeft="100px"
+		}
+		function MoveId1() {
+			document.querySelector(".icons3").style.marginLeft="100px"
+		}
+		function MoveId2() {
+			document.querySelector(".icons4").style.marginLeft="100px"
+		}
+		function myButton() {
+			location.reload();
+		}
+
+		let btncircle1=document.querySelector('.circle1');
+		let btncircle2=document.querySelector('.circle2');
+
+	let	btncircle3=document.querySelector('.circle3');
+		let btncircle4=document.querySelector('.circle4');
+	let	btncircle5=document.querySelector('.circle5');
+		
+
+		btncircle1.addEventListener('click',()=>btncircle1.style.backgroundColor="pink");
+
+
+
+		
+	</script>
+
+	
+
+</body>
+</html>
