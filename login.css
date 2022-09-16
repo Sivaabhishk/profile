@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lobster+Two:ital@1&family=Poppins:ital@1&family=Roboto:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins', cursive;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(88, 52, 105);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #fff;
+    width:900px ;
+    min-height: 400px;
+    box-shadow: rgba(50,50,93,0.25)0px 6px 12px -2px,rgba(0,0,0,0.3)0px 3px 7px -3px;
+   display: flex;
+   
+   
+}
+.form,
+.image{
+    width:50%;
+}
+.form{
+    padding: 20px;
+}
+.image{
+    background-image: url(img/pro22.jpg);
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #7227d54f;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.overlay h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.overlay p{
+    color: white;
+    font-size: 12px;
+
+}
+.form{
+    padding: 60px 25px ;
+    display: flex;
+    flex-direction: column;
+   
+}
+.form h3{
+    font-size: 30px;
+    font-weight: 500;
+position: relative;
+margin-bottom: 30px;
+}
+.form h3::after{
+    content: '';
+   
+    height: 2.8px;
+    width: 40px;
+    background: #7227D5;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    border-radius: 5%;
+}
+.fa{
+    color: #7227D5;
+    position:absolute;
+    top: 9px;
+    font-size: 18px;
+}
+.input-field{
+    width: 100%;
+    background-color: red;
+    margin-bottom: 10px;
+    position: relative;
+}
+.input-field input{
+display: block;
+width: 100%;
+padding: 10px 30px;
+outline: none;
+border: none;
+border-bottom: 1px solid gray;
+font-size: 15px;
+}
+.form >a{
+    color:#7227D5;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: #7227D5;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 200px;
+    border-radius: 50px;
+    box-shadow: rgba(50,50,93,0.25)0px 6px 12px -2px,rgba(0,0,0,0.3)0px 3px 7px -3px;
+   
+}
+
+button+p {
+    text-align: center;
+    padding-top: 26px;
+}
+button+p a{
+
+    text-decoration: none;
+    color: #7227D5;
+
+}
